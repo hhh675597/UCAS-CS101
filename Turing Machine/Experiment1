@@ -1,0 +1,25 @@
+q0,B,B,R,q0
+q0,1,B,R,q1
+q1,1,1,R,q1
+q1,+,+,R,q1
+q1,=,=,R,q2
+q2,1,1,R,q2
+q2,B,1,L,q3
+q3,1,1,L,q3
+q3,=,=,L,q3
+q3,+,+,L,q3
+q3,B,B,R,q0
+q0,+,+,R,q4
+q4,=,=,R,qa
+q4,1,B,R,q5
+q5,1,1,R,q5
+q5,=,=,R,q6
+q6,1,1,R,q6
+q6,B,1,L,q7
+q7,1,1,L,q7
+q7,=,=,L,q8
+q8,1,1,L,q9
+q9,1,1,L,q9
+q9,B,B,R,q4
+q8,B,B,R,qa
+#the first edition
