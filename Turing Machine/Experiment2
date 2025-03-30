@@ -1,3 +1,4 @@
+#若第一个数最高位为1:bug,输出多一个首0
 q0,0,0,R,q0
 q0,1,1,R,q0
 q0,+,+,L,qL
@@ -79,10 +80,13 @@ qBac,Y,Y,L,qBac
 qBac,X,X,L,qagnc
 qagnc,X,X,L,qagnc
 qagnc,0,X,R,qL1
-qagnc,1,X,R,qL0 #This ln is wrong!!! You can recognize 0 as 1, but you can never recognize 1 as 0.
 qagn,B,L,R,qL0
 qRL0,+,+,R,qR0L0
 qagn,L,L,R,qa
 qagnc,B,L,R,qL1
 qagnc,L,L,R,qa
 qRL1,+,+,R,qR0L1
+qagnc,1,X,L,qfind0
+qfind0,1,0,L,qfind0
+qfind0,0,1,R,qL0
+qfind0,B,1,R,qL0
