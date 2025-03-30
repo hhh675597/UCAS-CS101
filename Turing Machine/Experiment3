@@ -78,4 +78,17 @@ qBac,0,0,L,qBac
 qBac,Y,Y,L,qBac
 qBac,X,X,L,qagnc
 qagnc,X,X,L,qagnc
+qagnc,0,X,R,qL1
 qagn,B,L,R,qL0
+qRL0,+,+,R,qR0L0
+qagn,L,L,R,qa
+qagnc,B,L,R,qL1
+qagnc,L,L,R,qa
+qRL1,+,+,R,qR0L1
+qagnc,1,X,L,qfind0
+qfind0,1,0,L,qfind0
+qfind0,0,1,R,qL0
+qfind0,B,1,R,qL0
+#缺陷：
+#不能实现右侧数位数多于左侧数的加法（换言之，可以实现左侧数位数大于等于右侧数的加法）
+#存在多余首0的情况
