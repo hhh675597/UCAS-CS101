@@ -1,4 +1,3 @@
-#can compute cases with carry=0
 q0,0,0,R,q0
 q0,1,1,R,q0
 q0,+,+,L,qL
@@ -60,3 +59,30 @@ qR0L1,=,=,R,qtail1
 qL1,X,X,R,qL1
 qL1,Y,Y,R,qL1
 qagn,1,X,R,qL1
+qRL1,1,Y,R,qR1L1
+qR1L1,Y,Y,R,qR1L1
+qR1L1,=,=,R,qtail0c
+qtail0c,0,0,R,qtail0c
+qtail0c,1,1,R,qtail0c
+qtail0c,B,B,L,qwait0c
+qwait0c,1,B,R,qmove10c
+qmove10c,B,1,L,qtail0c
+qwait0c,0,B,R,qmove00c
+qmove00c,B,0,L,qtail0c
+qwait0c,=,=,R,qR1L1
+qR1L1,B,0,L,qBac
+qBac,+,+,L,qBac
+qBac,=,=,L,qBac
+qBac,1,1,L,qBac
+qBac,0,0,L,qBac
+qBac,Y,Y,L,qBac
+qBac,X,X,L,qagnc
+qagnc,X,X,L,qagnc
+qagnc,0,X,R,qL1
+qagnc,1,X,R,qL0 #This ln is wrong!!! You can recognize 0 as 1, but you can never recognize 1 as 0.
+qagn,B,L,R,qL0
+qRL0,+,+,R,qR0L0
+qagn,L,L,R,qa
+qagnc,B,L,R,qL1
+qagnc,L,L,R,qa
+qRL1,+,+,R,qR0L1
