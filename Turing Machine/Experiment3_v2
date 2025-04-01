@@ -61,7 +61,8 @@ qagnc,X,X,L,qagnc
 qagnc,0,X,R,qL1
 qagn,B,L,R,qL0
 qRL0,+,+,R,qR0L0
-qagnc,B,L,R,qL1
+qagnc,B,X,L,qOverFlow
+qOverFlow,B,L,R,qL1
 qRL1,+,+,R,qR0L1
 qagnc,1,X,L,qfind0
 qfind0,1,0,L,qfind0
